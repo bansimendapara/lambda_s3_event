@@ -6,7 +6,7 @@ dynamodb = boto3.resource('dynamodb')
 
 def lambda_handler(event, context):
     
-    table = dynamodb.Table('s3change')
+    table = dynamodb.Table('DynamoDB table name')
     
     s3Event = event['Records'][0]
     print(s3Event)

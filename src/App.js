@@ -13,7 +13,7 @@ const App = () => {
 
   const getData = async () => {
     try {
-      const data = await axios.get("https://4uylvx38ac.execute-api.us-east-1.amazonaws.com/prod/s3change");
+      const data = await axios.get("API URL");
       console.log(data.data)
       setChange(data.data);
       setLoading(true);

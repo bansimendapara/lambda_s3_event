@@ -1,12 +1,11 @@
 import json
 import boto3
-from datetime import datetime, timedelta
 
 dynamodb = boto3.resource('dynamodb')
 
 def lambda_handler(event, context):
     
-    table = dynamodb.Table('s3change')
+    table = dynamodb.Table('DynamoDB table name')
 
     response = table.scan()
     data = response['Items']
